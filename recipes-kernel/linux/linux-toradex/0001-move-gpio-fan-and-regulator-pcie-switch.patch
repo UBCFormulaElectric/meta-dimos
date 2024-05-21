@@ -7,7 +7,7 @@ index 6968646..9420c5f 100644
  		pinctrl-names = "default";
  		pinctrl-0 = <&pinctrl_gpio8>;
 -		gpios = <&lsio_gpio3 28 GPIO_ACTIVE_HIGH>;
-+		gpios = <&lsio_gpio2 0 GPIO_ACTIVE_HIGH>;
++		gpios = <&lsio_gpio2 7 GPIO_ACTIVE_HIGH>;
  		gpio-fan,speed-map = <	 0 0
  				      3000 1>;
  	};
@@ -16,7 +16,7 @@ index 6968646..9420c5f 100644
  		pinctrl-0 = <&pinctrl_gpio7>;
  		enable-active-high;
 -		gpio = <&lsio_gpio3 26 GPIO_ACTIVE_HIGH>;
-+		gpio = <&lsio_gpio2 1 GPIO_ACTIVE_HIGH>;
++		gpio = <&lsio_gpio2 8 GPIO_ACTIVE_HIGH>;
  		regulator-name = "pcie_switch";
  		regulator-min-microvolt = <1800000>;
  		regulator-max-microvolt = <1800000>;

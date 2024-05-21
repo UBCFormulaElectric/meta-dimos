@@ -24,4 +24,7 @@ IMAGE_INSTALL += "\
     ${@bb.utils.contains("DISTRO_FEATURES", "gstreamer", "packagegroup-b2qt-embedded-gstreamer", "", d)} \
     packagegroup-qt6-modules \
     packagegroup-b2qt-embedded-addons \
+    libgpiod \ 
+    libgpiod-tools \
+    libgpiod-dev\
     "
