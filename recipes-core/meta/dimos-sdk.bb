@@ -8,6 +8,10 @@ TOOLCHAIN_HOST_TASK += "nativesdk-packagegroup-b2qt-embedded-qt6-toolchain-host 
 TOOLCHAIN_TARGET_TASK += "\
     packagegroup-b2qt-embedded-toolchain-target \
     packagegroup-qt6-modules \
+    libgpiod \ 
+    libgpiod-tools \
+    libgpiod-dev \
+    libsocketcan \
 "
 
 PACKAGE_EXCLUDE_COMPLEMENTARY += "qtwebengine-dbg"
