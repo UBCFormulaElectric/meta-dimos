@@ -18,6 +18,7 @@ inherit consistent_timestamps
 # add some extra space to the device images
 IMAGE_ROOTFS_EXTRA_SPACE = "100000"
 
+# NOTE TAHT packagegroup-b2qt-embedded-addons is optional
 IMAGE_INSTALL += "\
     packagegroup-b2qt-embedded-base \
     packagegroup-b2qt-embedded-tools \
@@ -26,5 +27,6 @@ IMAGE_INSTALL += "\
     packagegroup-b2qt-embedded-addons \
     libgpiod \ 
     libgpiod-tools \
-    libgpiod-dev\
+    libgpiod-dev \
+    libsocketcan \
     "
