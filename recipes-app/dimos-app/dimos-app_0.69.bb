@@ -7,7 +7,7 @@ SECTION = "graphics"
 
 LICENSE = "CLOSED"
 
-SRCREV = "9652749b489a2b42e2d6a279451aa6d864bbfecf"
+SRCREV = "6c46747c27d5d5da55d47017a760d510408eee23"
 SRC_URI = "gitsm://github.com/UBCFormulaElectric/Consolidated-Firmware.git;lfs=1;branch=master;protocol=https;destsuffix=git"
 
 S = "${WORKDIR}/git"
