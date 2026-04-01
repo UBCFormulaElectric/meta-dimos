@@ -1,0 +1,22 @@
+diff --git a/stm32mp157d-dk1.dts b/stm32mp157d-dk1.dts
+index e6d2e7c..06f67cc 100644
+--- a/arch/arm/boot/dts/st/stm32mp157d-dk1.dts
++++ b/arch/arm/boot/dts/st/stm32mp157d-dk1.dts
+@@ -25,3 +25,17 @@
+ 		stdout-path = "serial0:115200n8";
+ 	};
+ };
++
++&m_can1 {
++	pinctrl-names = "default", "sleep";
++	pinctrl-0 = <&m_can1_pins_b>;
++	pinctrl-1 = <&m_can1_sleep_pins_b>;
++	status = "okay";
++};
++
++&m_can2 {
++	pinctrl-names = "default", "sleep";
++	pinctrl-0 = <&m_can2_pins_a>;
++	pinctrl-1 = <&m_can2_sleep_pins_a>;
++	status = "okay";
++};

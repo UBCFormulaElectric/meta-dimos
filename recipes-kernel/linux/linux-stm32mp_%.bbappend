@@ -1,2 +1,2 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}"
-SRC_URI += "file://tmp.patch"
+SRC_URI += "file://0001-enable-can.patch"
