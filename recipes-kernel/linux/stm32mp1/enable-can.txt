@@ -1,0 +1,28 @@
+&pinctrl {
+	m_can2_pins_dk1: m-can2-dk1-0 {
+		pins1 {
+			pinmux = <STM32_PINMUX('B', 6, AF9)>; /* FDCAN2_TX */
+			slew-rate = <1>;
+			drive-push-pull;
+			bias-disable;
+		};
+		pins2 {
+			pinmux = <STM32_PINMUX('B', 5, AF9)>; /* FDCAN2_RX */
+			bias-disable;
+		};
+	};
+
+	m_can2_sleep_pins_dk1: m-can2-dk1-sleep-0 {
+		pins {
+			pinmux = <STM32_PINMUX('B', 6, ANALOG)>,
+				 <STM32_PINMUX('B', 5, ANALOG)>;
+		};
+	};
+};
+
+&m_can2 {
+	pinctrl-names = "default", "sleep";
+	pinctrl-0 = <&m_can2_pins_dk1>;
+	pinctrl-1 = <&m_can2_sleep_pins_dk1>;
+	status = "okay";
+};
